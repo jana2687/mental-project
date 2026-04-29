@@ -41,14 +41,38 @@
     #about .description p {
         font-size: 14px;
     }
-}
 
+    #counter .stats {
+        padding: 25px 16px;
+        font-size: 12px;
+    }
+    #services {
+    padding: 50px 0;}
+    #services .one h2 {
+    font-size: 36px;
+    margin-bottom: 13px;
+}
+#services .one p {
+    font-size: 17px;
+}
+#services .boxes {
+    margin-top: 35px;
+}
+#services .box {
+    width: 70%;
+}
+}
 @media (min-width: 371px) and (max-width: 992px) {}
 
 @media (min-width: 577px) and (max-width: 992px) {
     header .slider .item .caption p {
         width: 56%;
         font-size: 16px;
+    }
+
+    #counter .stats {
+        padding: 25px 80px;
+        font-size: 14px;
     }
 }
 
@@ -61,17 +85,24 @@
         width: 55%;
         font-size: 17px;
     }
-       #about .cards {
-           display: flex;
-           flex-direction:row;
-           flex-wrap: wrap;
-        }
-      #about .card:not(:last-child){
+
+    #about .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #about .card:not(:last-child) {
         width: calc(50% - 10px);
-       }
-       #about .card:nth-child(3){
-        width:100%;
-       }
+    }
+
+    #about .card:nth-child(3) {
+        width: 100%;
+    }
+    #counter .stats {
+    padding: 34px 138px;
+    font-size: 15px;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -84,6 +115,9 @@
     header .slider .item .caption p {
         width: 44%;
     }
+     #counter .stats {
+  padding: 46px 214px;
+}
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {}

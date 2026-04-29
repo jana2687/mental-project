@@ -293,14 +293,14 @@
            border-radius: 20px;
            padding: 8px 18px;
            letter-spacing: 1px;
-           color: var(--main-color);
+           color: var(--offWight-color);
            z-index: 3;
            transition-duration: .5s;
            margin-top: 20px;
        }
 
        #about .first .item button:hover {
-           background-color: var(--main-color);
+           background-color: var(--offWight-color);
            color: var(--main2-color);
        }
 
@@ -323,7 +323,7 @@
        #about .first .item button:hover::before {
            transform: translate(7px, 8px);
            z-index: -1;
-           background-color: rgba(122, 143, 158, .5);
+           background-color: rgba(248, 250, 243, .7);
        }
 
 
@@ -343,7 +343,7 @@
 
 
        #about .card {
-           background-color: rgba(253, 252, 250, .6);
+           background-color: var(--offWight-color);
            backdrop-filter: blur(10px);
            padding: 20px 25px;
            border-radius: 15px;
@@ -416,110 +416,94 @@
            margin: 0;
            line-height: 1.6;
        }
- #counter{
-    height:1z00px;
- }
+
        #counter .stats {
-  display: flex;
-  justify-content: space-between;
-  background:var(--main-color);
-  padding: 56px 300px;
-  text-align: center;
-}
-
-#counter .stat h2 {
-  color: var(--light-color);
-  font-size: 40px;
-}
-
-#counter .stat p {
-  color:var(--light-color);
-  letter-spacing: 1px;
-}
-#services {
-  background: #f3ece4;
-  padding: 80px 0;
-  overflow: hidden;
-}
-#services .one{
-    text-align: center;
-}
-
-#services .one h5 {
-  color: #c3a98b;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-#services .one h2 {
-  font-size: 42px;
-  color: #2c3e50;
-  margin-bottom: 15px;
-}
-
-#services .one p {
-  color: #6c7a89;
-  max-width: 600px;
-  margin: auto;
-}
-
-
-#services .boxes {
-  margin-top: 50px;
-  gap: 20px;
-  justify-content: center;
-}
-
-#services .boxes .box:nth-child(1) {
-           transition-delay: 0.2s;
+           display: flex;
+           justify-content: space-between;
+           background: var(--dark-color);
+           padding: 47px 308px;
+           text-align: center;
        }
 
-       #services .boxes .box:nth-child(2) {
-           transition-delay: 0.4s;
+       #counter .stat h2 {
+           color: var(--light-color);
+           font-size: 40px;
        }
 
-       #services .boxes .box:nth-child(3) {
-           transition-delay: 0.6s;
+       #counter .stat p {
+           color: var(--light-color);
+           letter-spacing: 1px;
        }
-       #services .boxes .box:nth-child(4) {
-           transition-delay: 0.8s;
+
+       #services {
+           background: var(--light-color);
+           padding: 80px 0;
+           overflow: hidden;
        }
-#services .box {
-  background: #f8f6f3;
-  border: 1px solid #e0d6cc;
-  border-radius: 20px;
-  padding: 30px 20px;
-  text-align: left;
-  transition: 0.3s;
-}
+
+       #services .one {
+           text-align: center;
+       }
+
+       #services .one h5 {
+           color: #c3a98b;
+           letter-spacing: 2px;
+           font-size: 14px;
+           margin-bottom: 10px;
+       }
+
+       #services .one h2 {
+           font-size: 42px;
+           color: #2c3e50;
+           margin-bottom: 15px;
+       }
+
+       #services .one p {
+           color: #6c7a89;
+           max-width: 600px;
+           margin: auto;
+       }
 
 
+       #services .boxes {
+           margin-top: 50px;
+           gap: 20px;
+           justify-content: center;
+       }
 
 
-#services .icon {
-  width: 55px;
-  height: 55px;
-  background: #5f7685;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-#services .icon i {
-  color: #fff;
-  font-size: 20px;
-}
+       #services .box {
+           background: var(--offWight-color);
+           border: 1px solid #e0d6cc;
+           border-radius: 20px;
+           padding: 30px 20px;
+           text-align: left;
+       }
 
 
-#services .box h5 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
+       #services .icon {
+           width: 55px;
+           height: 55px;
+           background: #5f7685;
+           border-radius: 14px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-bottom: 20px;
+       }
 
-#services .box p {
-  color: #6c7a89;
-  line-height: 1.6;
-}
+       #services .icon i {
+           color: var(--main2-color);
+           font-size: 20px;
+       }
+
+
+       #services .box h5 {
+           color: #2c3e50;
+           margin-bottom: 10px;
+       }
+
+       #services .box p {
+           color: #6c7a89;
+           line-height: 1.6;
+       }
