@@ -58,9 +58,7 @@
 #services .boxes {
     margin-top: 35px;
 }
-#services .box {
-    width: 70%;
-}
+
 }
 @media (min-width: 371px) and (max-width: 992px) {}
 
@@ -118,6 +116,7 @@
      #counter .stats {
   padding: 46px 214px;
 }
+
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {}
