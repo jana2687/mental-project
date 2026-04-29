@@ -4,6 +4,7 @@ let slides = document.querySelectorAll(".slide"),
   secondAbout = document.querySelector("#about .second"),
   current = 0,
   interval;
+const counters = document.querySelectorAll(".counter");
 dots.forEach(function (dot) {
   dot.addEventListener("click", function () {
     let index = +(this.dataset.index);
@@ -28,7 +29,6 @@ window.addEventListener("scroll", () => {
 const sections = document.querySelectorAll(".animate"),
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
       } else {
@@ -45,3 +45,15 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 AOS.init();
+let started = false;
+
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !started) {
+      counters.forEach(counter => {
+        startCounter(counter);
+      });
+      started = true;
+    }
+  });
+});

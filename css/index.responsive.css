@@ -37,9 +37,10 @@
         margin-bottom: 10px;
         font-size: 14px;
     }
-   #about .description p {
-    font-size: 14px;
-}
+
+    #about .description p {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 371px) and (max-width: 992px) {}
@@ -60,6 +61,17 @@
         width: 55%;
         font-size: 17px;
     }
+       #about .cards {
+           display: flex;
+           flex-direction:row;
+           flex-wrap: wrap;
+        }
+      #about .card:not(:last-child){
+        width: calc(50% - 10px);
+       }
+       #about .card:nth-child(3){
+        width:100%;
+       }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
