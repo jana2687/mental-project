@@ -46,20 +46,48 @@
         padding: 25px 16px;
         font-size: 12px;
     }
+
     #services {
-    padding: 50px 0;}
+        padding: 50px 0;
+    }
+
     #services .one h2 {
-    font-size: 36px;
-    margin-bottom: 13px;
-}
-#services .one p {
-    font-size: 17px;
-}
-#services .boxes {
-    margin-top: 35px;
+        font-size: 36px;
+        margin-bottom: 13px;
+    }
+
+    #services .one p {
+        font-size: 17px;
+    }
+
+    #services .boxes {
+        margin-top: 35px;
+    }
+
+    .faq {
+        padding: 45px 0px;
+    }
+
+    .faq .faq-tittle h2 {
+        font-size: 32px;
+    }
+
+    .faq .faq-tittle p {
+        font-size: 14px;
+    }
+
+    .faq-item.active .faq-answer p {
+        font-size: 14px;
+    }
+
+    .footer-bottom .container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 }
 
-}
 @media (min-width: 371px) and (max-width: 992px) {}
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -72,6 +100,15 @@
         padding: 25px 80px;
         font-size: 14px;
     }
+
+    .footer-bottom .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -97,10 +134,11 @@
     #about .card:nth-child(3) {
         width: 100%;
     }
+
     #counter .stats {
-    padding: 34px 138px;
-    font-size: 15px;
-}
+        padding: 34px 138px;
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -113,9 +151,10 @@
     header .slider .item .caption p {
         width: 44%;
     }
-     #counter .stats {
-  padding: 46px 214px;
-}
+
+    #counter .stats {
+        padding: 46px 214px;
+    }
 
 }
 
