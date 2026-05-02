@@ -29,11 +29,6 @@
          height: 70px;
      }
 
-     #mainNav.scrolled {
-         background-color: rgba(35, 58, 78, .6);
-         backdrop-filter: blur(10px);
-         box-shadow: 0 2px 24px rgba(93, 118, 139, 0.08);
-     }
 
      #mainNav .navbar-brand {
          font-family: "Playfair Display", serif;
@@ -44,8 +39,11 @@
          transition: color var(--transition);
      }
 
-     #mainNav.nav.scrolled .navbar-brand {
-         color: var(--dark-color);
+
+     #mainNav.scrolled {
+         background-color: rgba(35, 58, 78, .6);
+         backdrop-filter: blur(10px);
+         box-shadow: 0 2px 24px rgba(93, 118, 139, 0.08);
      }
 
      #mainNav .navbar-brand span {
@@ -57,16 +55,13 @@
          letter-spacing: 1.5px;
          text-transform: uppercase;
          font-weight: 400;
-         color: rgba(248, 239, 229, 0.85) !important;
+         color: rgba(248, 239, 229, 0.85);
          padding: 4px 0 !important;
          margin: 0 14px;
          position: relative;
          transition: color var(--transition);
      }
 
-     #mainNav.nav.scrolled .nav-link {
-         color: var(--dark-color) !important;
-     }
 
      #mainNav .nav-link::after {
          content: "";
@@ -113,7 +108,7 @@
 
 
      #navMenu .nav-link {
-         color: var(--light-color) !important;
+         color: var(--light-color);
      }
 
      header {
@@ -437,11 +432,13 @@
          line-height: 1.6;
      }
 
+     #counter {
+         overflow: hidden;
+     }
+
      #counter .stats {
-         display: flex;
-         justify-content: space-between;
          background: var(--dark-color);
-         padding: 47px 308px;
+         padding: 47px 120px;
          text-align: center;
      }
 
@@ -507,10 +504,10 @@
          background: var(--offWight-color);
          border: 1px solid #e0d6cc;
          border-radius: 20px;
-         padding: 30px 20px;
+         padding: 25px 25px;
          text-align: left;
+         width: 254px;
      }
-
 
      #services .icon {
          width: 55px;

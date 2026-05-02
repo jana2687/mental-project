@@ -38,12 +38,22 @@ interval = setInterval(autoSlide, 6000);
 
 window.addEventListener("scroll", () => {
   let nav = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
+  if (window.scrollY > 10) {
     nav.classList.add("scrolled");
   } else {
     nav.classList.remove("scrolled");
   }
 })
+const nav = document.getElementById("mainNav");
+const menu = document.getElementById("navMenu");
+
+menu.addEventListener("show.bs.collapse", () => {
+  nav.classList.add("scrolled");
+});
+
+menu.addEventListener("hide.bs.collapse", () => {
+  nav.classList.remove("scrolled");
+});
 const sections = document.querySelectorAll(".animate"),
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
